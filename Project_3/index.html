@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program 8 - Quotes Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #000000, #1a1a1a, #434343);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quote-box {
+            background: #1f1f1f;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            text-align: center;
+        }
+
+        #Quotes {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #b5b5b5;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="quote-box">
+        <p id="Quotes">
+            यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ॥
+            परित्राणाय साधूनां विनाशाय च दुष्कृताम् । धर्मासंस्थापनार्थाय संभवािम युगे युगे ॥
+        </p>
+        <button class="btn btn-custom mt-4" onclick="showQuotes()">Get Quote</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

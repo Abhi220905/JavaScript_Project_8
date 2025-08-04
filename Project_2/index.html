@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project 8 - Expiry Countdown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #000000, #1a1a1a, #434343);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #1f1f1f;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+            color: #f5f5f5;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #f5f5f5;
+        }
+
+        label {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+
+        i{
+            padding-bottom: 10px;
+        }
+
+        input[type="datetime-local"] {
+            padding: 12px;
+            width: 100%;
+            border: 1px solid #444;
+            background: #2c2c2c;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="datetime-local"]:focus {
+            outline: none;
+            border-color: #00bfff;
+            box-shadow: 0 0 8px rgba(0, 191, 255, 0.6);
+        }
+
+        #output {
+            margin-top: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #00ffcc;
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Expiry Countdown Timer</h1>
+        <label for="expiry">Select Expiry Date & Time:</label>
+        <i class="fa-solid fa-clock"></i> Countdown Timer
+        <input type="datetime-local" id="expiry">
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js  "></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 8 - Day Timer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            background: linear-gradient(135deg, #000000, #1a1a1a, #434343);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1,
+        h2 {
+            margin: 10px 0;
+        }
+
+        #date {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        #timer {
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>
+            <h2 id="timer">Live Timer</h2>
+            <h1 id="date">Live Date</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
